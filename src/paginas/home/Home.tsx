@@ -1,23 +1,32 @@
-// Importa a biblioteca react para utilizar componentes react
-import React from "react";
-// Importa arquivo estilos
-import "./Home.css";
+import React from 'react';
+import homeLogo from '../../assets/home.jpg'
+import './Home.css';
 
-import homeLogo from"../../assets/home.jpg"
 
-// Função criada para retornar um elemento h1 com texto "home"
 function Home() {
-  return (
-    <>
-      <h1 className="titulo">Home</h1> 
+    return (
+        <>
+        <div className="bg-indigo-900 flex justify-center">
+          <div className='container grid grid-cols-2 text-white'>
+            <div className="flex flex-col gap-4 items-center justify-center py-4">
+              <h2 className='text-5xl font-bold'>Seja bem vinde!</h2>
+              <p className='text-xl'>Expresse aqui seus pensamentos e opniões</p>
+  
+              <div className="flex justify-around gap-4">
+              
+                <button className='rounded bg-white text-blue-800 py-2 px-4'>Ver postagens</button>
+              </div>
+            </div>
+  
+            <div className="flex justify-center ">
+              <img src={homeLogo} alt="" className='w-2/3' />
       
-      <img
-        src={homeLogo}
-        alt="Imagem Tela Inicial"
-        className="img"
-      />
-    </>
-  );
+            </div>
+          </div>
+        </div>
+      
+      </>
+    );
 }
 
-export default Home; // Exporta o componente para ser utilizado em outras partes do codigo
+export default Home;
