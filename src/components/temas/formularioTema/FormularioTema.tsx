@@ -15,7 +15,7 @@ function FormularioTema() {
   const token = usuario.token;
 
   async function buscarPorId(id: string) {
-    await buscar(`/temas/${id}`, setTema, {
+    await buscar(`/tema/${id}`, setTema, {
       headers: {
         Authorization: token,
       },
@@ -42,7 +42,7 @@ function FormularioTema() {
 
     if (id !== undefined) {
       try {
-        await atualizar(`/temas`, tema, setTema, {
+        await atualizar(`/tema`, tema, setTema, {
           headers: {
             'Authorization': token
           }
@@ -63,7 +63,7 @@ function FormularioTema() {
 
     } else {
       try {
-        await cadastrar(`/temas`, tema, setTema, {
+        await cadastrar(`/tema`, tema, setTema, {
           headers: {
             'Authorization': token
           }
