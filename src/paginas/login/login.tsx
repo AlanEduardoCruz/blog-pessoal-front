@@ -5,7 +5,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import UsuarioLogin from '../../models/UsuarioLogin';
 import { RotatingLines } from 'react-loader-spinner';
-import { AuthContext } from '../../context/AuthContext';
+import { AuthContext } from '../../contexts/AuthContext';
 
 function Login() {
   // Hook para navegação
