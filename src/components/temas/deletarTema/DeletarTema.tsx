@@ -49,7 +49,7 @@ function DeletarTema() {
 
     async function deletarTema() {
         try {
-            await deletar(`/temas/${id}`, {
+            await deletar(`/tema/${id}`, {
                 headers: {
                     'Authorization': token
                 }
